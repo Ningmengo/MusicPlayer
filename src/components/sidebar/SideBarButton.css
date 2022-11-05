@@ -5,15 +5,27 @@ a {
 .btn-body {
   display: flex;
   flex-direction: column;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 20px;
   color: #f8d9c0;
   align-items: center;
   justify-content: center;
+  margin: 5px auto;
+  transition: all 0.5s ease;
 }
 
 .btn-title {
   margin: 4px auto;
   font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-body.active {
+  background-color: rgba(244, 187, 146, 1);
+  color: #fff;
+  transform: scale(1.05);
+}
+.btn-body:hover {
+  color: #fff;
 }
