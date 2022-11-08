@@ -1,0 +1,40 @@
+.library-body {
+  width: 90%;
+  height: 90%;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+
+  justify-content: space-between;
+}
+.playlist-card {
+  width: 20%;
+  height: 35%;
+  border-radius: 20px;
+  background-color: rgb(100, 143, 182);
+  border: 1px solid white;
+  padding: 1%;
+  margin-bottom: 2%;
+  transition: all 0.2s ease-in;
+}
+.playlist-image {
+  width: 100%;
+  border-radius: 15px;
+}
+.playlist-card:hover {
+  transform: scale(1.02);
+}
+.playlist-title {
+  font-weight: 800;
+  font-size: 16px;
+  color: #c4d0e3;
+  margin: 10px 0px 0px;
+}
+.playlist-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0px;
+  color: #c4d0e3;
+  opacity: 0.9;
+}
