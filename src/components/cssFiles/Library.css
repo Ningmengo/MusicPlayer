@@ -1,22 +1,22 @@
 .library-body {
-  width: 90%;
+  width: 95%;
   height: 90%;
   padding: 3%;
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .playlist-card {
-  width: 20%;
-  height: 35%;
+  width: 15%;
+  height: auto;
   border-radius: 20px;
-  background-color: rgb(100, 143, 182);
+  background: rgba(138, 142, 226, 0.3);
   border: 1px solid white;
-  padding: 1%;
-  margin-bottom: 2%;
+  padding: 1.2%;
+  margin: 1%;
   transition: all 0.2s ease-in;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .playlist-image {
   width: 100%;
@@ -26,15 +26,26 @@
   transform: scale(1.02);
 }
 .playlist-title {
-  font-weight: 800;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
   color: #c4d0e3;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 10px 0px 0px;
 }
 .playlist-subtitle {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0px;
   color: #c4d0e3;
+}
+.playlist-fade {
+  opacity: 0.3;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transition: all 0.2s ease-in;
+}
+.playlist-fade:hover {
   opacity: 0.9;
 }
