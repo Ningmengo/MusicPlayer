@@ -7,3 +7,7 @@
   background-image: url("https://images2.alphacoders.com/111/1111058.png");
   background-size: cover;
 }
+
+.flex {
+  display: flex;
+}

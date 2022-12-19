@@ -9,10 +9,13 @@ import "../cssFiles/Home.css";
 import SideBar from "../sidebar/SideBar";
 import Login from "./Login";
 import { setClientToken } from "../../spotify";
+import { useContext1 } from "../../context/context1";
 
 const Home = () => {
   const [token, setToken] = useState("");
 
+  const { testState } = useContext1();
+  console.log(testState);
   useEffect(() => {
     //标签值
     const token = window.localStorage.getItem("token");

@@ -1,8 +1,11 @@
 import Home from "./components/screens/Home";
+import { Context1Provider } from "./context/context1";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Context1Provider>
+        <Home />
+      </Context1Provider>
     </div>
   );
 }
