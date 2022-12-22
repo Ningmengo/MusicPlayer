@@ -24,5 +24,4 @@
 .queue-list {
   height: 80%;
   overflow-y: auto;
-  border: 3px solid red;
 }
