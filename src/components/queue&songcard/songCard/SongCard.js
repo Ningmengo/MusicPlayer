@@ -3,12 +3,11 @@ import "../../cssFiles/SongCard.css";
 import AlbumImage from "./AlbumImage";
 import AlbumInfo from "./AlbumInfo";
 
-const SongCard = (props) => {
-  console.log(props.album);
+const SongCard = ({ album }) => {
   return (
-    <div className="songCard-body">
-      {/* <AlbumImage url={album.image[0].url} />
-      <AlbumInfo album={album} /> */}
+    <div className="songCard-body flex">
+      <AlbumImage url={album?.images[0].url} />
+      <AlbumInfo album={album} />
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Home = () => {
   const [token, setToken] = useState("");
 
   const { testState } = useContext1();
-  console.log(testState);
+  // console.log(testState);
   useEffect(() => {
     //标签值
     const token = window.localStorage.getItem("token");
