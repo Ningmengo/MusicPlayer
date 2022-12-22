@@ -2,7 +2,6 @@ import React from "react";
 import "../../cssFiles/Queue.css";
 
 const Queue = ({ tracks, setCurrentIndex }) => {
-  console.log(tracks);
   return (
     <div className="queue-container flex">
       <div className="queue flex">
@@ -10,7 +9,16 @@ const Queue = ({ tracks, setCurrentIndex }) => {
 
         <div className="queue-list">
           {tracks?.map((track, index) => (
-            <div key={index}>{`${index + 1}: ${track?.track?.name}`}</div>
+            <div
+              key={index}
+              className="queue-item flex"
+              onClick={() => setCurrentIndex(index)}
+            >
+              <p className="track-name" key={index}>{`${index + 1}. ${
+                track?.track?.name
+              }`}</p>
+              <p> 0:30</p>
+            </div>
           ))}
         </div>
       </div>

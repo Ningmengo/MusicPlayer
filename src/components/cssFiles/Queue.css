@@ -25,3 +25,19 @@
   height: 80%;
   overflow-y: auto;
 }
+.queue-item {
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.queue-item:hover {
+  transform: scale(0.95);
+}
+.queue-list::-webkit-scrollbar {
+  display: none;
+}

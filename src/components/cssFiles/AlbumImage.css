@@ -4,6 +4,7 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+  padding-bottom: 30px;
 }
 .albumImage img {
   border-radius: 30px;
