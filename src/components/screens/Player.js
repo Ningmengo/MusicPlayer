@@ -5,6 +5,7 @@ import apiClient from "../../spotify";
 import SongCard from "../queue&songcard/songCard/SongCard";
 import Queue from "../queue&songcard/queue/Queue";
 import AudioPlayer from "../audio-player/AudioPlayer";
+import Widget from "../audio-player/Widget";
 
 const Player = () => {
   const location = useLocation();
@@ -33,7 +34,13 @@ const Player = () => {
   return (
     <div className="screen-container flex">
       <div className="left-player-body">
-        <AudioPlayer currentTrack={currentTrack?.album} />
+        <AudioPlayer
+          currentTrack={currentTrack?.album}
+          total={tracks}
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+        />
+        <Widget artistID={currentTrack?.album} />
       </div>
       <div className="right-player-body">
         <SongCard album={currentTrack?.album} />
