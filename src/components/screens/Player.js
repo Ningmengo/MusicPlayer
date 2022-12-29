@@ -40,7 +40,7 @@ const Player = () => {
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}
         />
-        <Widget artistID={currentTrack?.album} />
+        <Widget artistID={currentTrack?.album?.artists[0]?.id} />
       </div>
       <div className="right-player-body">
         <SongCard album={currentTrack?.album} />
