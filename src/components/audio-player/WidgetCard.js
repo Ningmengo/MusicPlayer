@@ -1,6 +1,8 @@
 import React from "react";
 import "../cssFiles/WidgetCard.css";
 import WidgetEntry from "./WidgetEntry";
+import { IconContext } from "react-icons";
+import { FiChevronRight } from "react-icons/fi";
 
 const WidgetCard = ({ title, similar, featured, newRelease }) => {
   return (
@@ -10,7 +12,7 @@ const WidgetCard = ({ title, similar, featured, newRelease }) => {
         ? similar.map((artist) => (
             <WidgetEntry
               title={artist.name}
-              subtitle={artist.followers?.total}
+              subtitle={artist.followers?.total + "Followers"}
               image={artist.images[2]?.url}
             />
           ))
@@ -18,8 +20,8 @@ const WidgetCard = ({ title, similar, featured, newRelease }) => {
         ? featured.map((playlist) => (
             <WidgetEntry
               title={playlist?.name}
-              subtitle={playlist?.tracks?.total}
-              image={playlist?.images[2]?.url}
+              subtitle={playlist?.tracks?.total + "Songs"}
+              image={playlist?.images[0]?.url}
             />
           ))
         : newRelease
@@ -31,6 +33,13 @@ const WidgetCard = ({ title, similar, featured, newRelease }) => {
             />
           ))
         : null}
+      <div className="widget-fade">
+        <div className="fade-button">
+          <IconContext.Provider value={{ size: "24px", color: "#c4d0e3" }}>
+            <FiChevronRight />
+          </IconContext.Provider>
+        </div>
+      </div>
     </div>
   );
 };

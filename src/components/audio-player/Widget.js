@@ -39,8 +39,8 @@ const Widget = ({ artistID }) => {
   return (
     <div className="widgets-body flex">
       <WidgetCard title="Similar Artists" similar={similar} />
-      <WidgetCard title="Made For You" similar={featured} />
-      <WidgetCard title="New Release" similar={newRelease} />
+      <WidgetCard title="Made For You" featured={featured} />
+      <WidgetCard title="New Release" newRelease={newRelease} />
     </div>
   );
 };

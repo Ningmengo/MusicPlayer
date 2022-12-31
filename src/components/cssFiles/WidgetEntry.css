@@ -21,3 +21,9 @@
   color: aliceblue;
   margin: 0px 0px 5px;
 }
+.entry-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
