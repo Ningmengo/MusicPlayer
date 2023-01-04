@@ -35,6 +35,7 @@ const AudioPlayer = ({
     //built in fuction that clears ...
     clearInterval(intervalRef.current);
 
+    //if the time of the song ends,
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
         handleNext();
@@ -44,6 +45,7 @@ const AudioPlayer = ({
     }, [1000]);
   };
 
+  //play and pause function
   useEffect(() => {
     if (audioRef.current.src) {
       if (isPlaying) {
@@ -54,7 +56,8 @@ const AudioPlayer = ({
         audioRef.current.pause();
       }
     } else {
-      if (isPlaying) {
+      if (!isPlaying) {
+        audioRef.current = new Audio(audioRef);
         audioRef.current.play();
         startTimer();
       } else {
@@ -86,10 +89,11 @@ const AudioPlayer = ({
   }, [isPlaying]);
 
   const handleNext = () => {
+    // if the current song is not the last song in the queue, then set the index to next song
     if (currentIndex < total.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      setCurrentIndex(currentIndex - 1); /*???????*/
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -121,7 +125,7 @@ const AudioPlayer = ({
         <div className="player-right-bottom flex">
           <div className="song-duration flex">
             <p className="duration">0:{addZeros(Math.round(trackProgress))}</p>
-            <WaveAnimation isPlaying={true} />
+            {/* <WaveAnimation isPlaying={true} /> */}
             <p className="duration">0:30</p>
           </div>
           <Controls

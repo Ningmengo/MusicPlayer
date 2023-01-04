@@ -3,7 +3,7 @@
   height: 35%;
   border-radius: 30px;
   border-top-right-radius: 0px;
-  background-color: RGBA(255, 255, 241, 0.27);
+  background-color: RGBA(255, 255, 241, 0.1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,6 +32,8 @@
   font-size: 14px;
   font-weight: 500px;
   color: white;
+  text-shadow: -1px 3px 4px rgb(0 0 0 / 38%);
+  font-family: monospace;
   cursor: pointer;
   transition: all 0.2s ease;
 }

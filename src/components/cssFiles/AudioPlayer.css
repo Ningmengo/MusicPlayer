@@ -7,6 +7,8 @@
   width: 37%;
 }
 .player-right-body {
+  background-color: RGBA(255, 255, 241, 0.2);
+  border-radius: 30px;
   width: 63%;
   flex-direction: column;
   justify-content: space-evenly;
@@ -18,8 +20,9 @@
   font-size: 58px;
   font-weight: bold;
   margin: 0px;
-  color: aquamarine;
-
+  font-family: monospace;
+  color: burlywood;
+  text-shadow: -1px 3px 4px rgba(0, 0, 0, 0.38);
   /*global*/
   overflow: hidden;
   text-overflow: ellipsis;
@@ -30,9 +33,10 @@
 }
 
 .song-artists {
-  color: beige;
+  color: #fcfcd5;
   font-size: 14px;
   font-weight: 500;
+  text-shadow: -1px 3px 4px rgba(0, 0, 0, 0.38);
 }
 
 .player-right-bottom {

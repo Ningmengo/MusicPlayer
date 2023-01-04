@@ -9,10 +9,11 @@
 }
 .playlist-card {
   width: 15%;
-  height: auto;
+  max-height: 400px;
   border-radius: 20px;
-  background: rgba(138, 142, 226, 0.3);
-  border: 1px solid white;
+  background-color: RGBA(255, 255, 241, 0.1);
+  border: 1px solid sandybrown;
+  font-family: monospace;
   padding: 1.2%;
   margin: 1%;
   transition: all 0.2s ease-in;
@@ -28,7 +29,7 @@
 .playlist-title {
   font-weight: 700;
   font-size: 20px;
-  color: #c4d0e3;
+  color: #ffffe0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 10px 0px 0px;
 }
@@ -36,7 +37,7 @@
   font-weight: 400;
   font-size: 14px;
   margin: 0px;
-  color: #c4d0e3;
+  color: #f5f5dc;
 }
 .playlist-fade {
   opacity: 0.3;
@@ -45,6 +46,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   transition: all 0.2s ease-in;
+  align-self: flex-end;
 }
 .playlist-fade:hover {
   opacity: 0.9;

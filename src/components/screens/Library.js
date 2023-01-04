@@ -41,7 +41,7 @@ const Library = () => {
                 <IconContext.Provider
                   value={{
                     size: "60px",
-                    color: "rgba(166, 236, 222, 1)",
+                    color: "#fcebad",
                   }}
                 >
                   <AiFillPlayCircle />
