@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "1c8c423ef16a4ec5bf71e6d9e22c4722";
-const redirectUri = "https://music-player-30wq8nk31-ningmengo.vercel.app";
+const redirectUri = "https://music-player-ningmengo.vercel.app/";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
